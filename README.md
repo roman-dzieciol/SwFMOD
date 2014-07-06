@@ -1,19 +1,5 @@
 SwFMOD
 ======
-
-// ============================================================================
-//  SwFMOD 1.0.0.8: 3D Audio subsystem for Deus Ex
-// ============================================================================
-//  Copyright (C) 2007 Roman Switch` Dzieciol
-//  FMOD Sound System Copyright (C) Firelight Technologies Pty, Ltd., 1994-2006
-// ============================================================================
-//  Website: http://sourceforge.net/projects/swfmod
-//  Support: http://sourceforge.net/forum/forum.php?forum_id=715911
-// ============================================================================
-
-     
-
-## ABOUT
     
 SwFMOD is a fully featured audio subsystem for Unreal Engine 1 games, Deus Ex in particular. SwFMOD uses FMOD, a cross-platform audio library offering high-quality, high-performance, hardware-independent, 100% software audio mixing. 
 
