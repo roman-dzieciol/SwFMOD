@@ -11,23 +11,9 @@ SwFMOD
 //  Support: http://sourceforge.net/forum/forum.php?forum_id=715911
 // ============================================================================
 
-    Index:
-     - ABOUT
-     - REQUIREMENTS
-     - INSTALLATION NOTES
-     - MANUAL INSTALLATION
-     - KNOWN ISSUES
-     - INGAME MENU
-     - CONSOLE COMMANDS
-     - INI CONFIGURATION
-     - MP3/OGG MUSIC
-     - CHANGELOG
-     - LICENSE
      
 
-//
-// ABOUT
-//
+## ABOUT
     
 SwFMOD is a fully featured audio subsystem for Unreal Engine 1 games, Deus Ex in particular. SwFMOD uses FMOD, a cross-platform audio library offering high-quality, high-performance, hardware-independent, 100% software audio mixing. 
 
@@ -39,9 +25,8 @@ SwFMOD is currently a Win32 DLL for the Deus Ex game. Porting to Linux or other 
 
 
 
-//
-// REQUIREMENTS
-//
+
+## REQUIREMENTS
 
 There are no special requirements, other than the latest 1112fm patch.
  - Windows
@@ -50,9 +35,9 @@ There are no special requirements, other than the latest 1112fm patch.
 
 
   
-//
-// INSTALLATION NOTES
-//
+
+## INSTALLATION NOTES
+
 
 SwFMOD installer will update all valid .INI files in your DeusEx folder to enable the new sound system. Uninstaller restores old settings.
 
@@ -60,9 +45,9 @@ This readme and the uninstaller can be accessed through the start menu.
 
 
   
-//
-// MANUAL INSTALLATION
-//
+
+## MANUAL INSTALLATION
+
 
 To install SwFMOD manually:
  - stop the game
@@ -79,17 +64,14 @@ To install SwFMOD manually:
  
 
 
-// 
-// INGAME MENU
-//
+## INGAME MENU
 
 The ingame sound menu (Settings->Sound) is still functional. You can use the volume sliders and the Sound Quality option.  Setting sound quality to "8bit" doesn't make it 8bit, it just enables the LowSoundQuality option (see INI CONFIGURATION).  The other settings in sound menu are not compatible with SwFMOD and have no effect.
 
 
   
-//
-// KNOWN ISSUES
-//
+## KNOWN ISSUES
+
 
  - No reverb
 Reverb isn't implemented at this time.
@@ -102,9 +84,8 @@ Most likely it's caused by applications that modify the sound output somehow, ie
 
 
 
-//
-// CONSOLE COMMANDS
-//
+## CONSOLE COMMANDS
+
 
 "ASTAT GLOBAL"
  - displays CPU and memory usage
@@ -120,9 +101,8 @@ Most likely it's caused by applications that modify the sound output somehow, ie
  
  
  
-// 
-// INI CONFIGURATION
-//
+## INI CONFIGURATION
+
 
 You can modify all parameters by editing the DeusEx.ini file if the game isn't running. The [SwFMOD.SwFMOD] config section doesn't exist in  .INI just after installation. To force the game to create it, change ie sound volume ingame then exit.
 
@@ -135,7 +115,7 @@ Some modifications may result in poor sound quality or even crashing. To restore
  - remove this section and all properties that belong to it
  - save DeusEx.ini
     
-    
+```    
 [SwFMOD.SwFMOD]
 SoundVolume=255.000000  // Volume of sound effects. Range: 0.0-255.0
 SpeechVolume=255.000000  // Volume of speech and other mp3 sound effects. Range: 0.0-255.0
@@ -184,17 +164,16 @@ StatChannels=0  // See CONSOLE COMMANDS
 StatChannelGroup=0  // See CONSOLE COMMANDS
 StatGlobal=0  // See CONSOLE COMMANDS
 bLogPlugins=0  // Dumps list of available plugins to log.
+```
 
 
+## MP3/OGG MUSIC
 
-//
-// MP3/OGG MUSIC
-//
 
 You can use MP2, MP3 or OGG music in addition to the old module format. The new formats do support dynamic music changes, see below for instructions.
 
 
-# IMPORTING GUIDE:
+### IMPORTING GUIDE:
 
 Importing the new formats is no different from importing the old module music.
  * Remove any spaces from the name of your mp3/ogg file, ie: "My File.mp3" -> "MyFile.mp3"
@@ -207,7 +186,7 @@ Importing the new formats is no different from importing the old module music.
  * your music is now ready
 
 
-# DYNAMIC MP3/OGG MUSIC:
+### DYNAMIC MP3/OGG MUSIC:
 
 Deus Ex supports 6 dynamic music sections:
  1. Default music
@@ -248,9 +227,8 @@ And that's all!
 
 
 
-//
-// CHANGELOG
-//
+## CHANGELOG
+
 
 1.0.0.8
  * MP2 sound effects
@@ -261,9 +239,8 @@ And that's all!
 
 
 
-// 
-// LICENSE
-//
+## LICENSE
+
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
